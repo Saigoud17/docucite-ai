@@ -11,7 +11,8 @@ import {
 } from 'lucide-react';
 import './App.css';
 
-const API = 'http://localhost:5000/api';
+const BACKEND_URL = (import.meta.env.VITE_API_URL || 'http://localhost:5000').replace(/\/$/, '');
+const API = `${BACKEND_URL}/api`;
 
 export default function App() {
   const [documents, setDocuments] = useState([]);
