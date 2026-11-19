@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Environment secrets (NEVER push API keys)
+.env
+server/.env
+client/.env
+
+# Build & OS files
+dist/
+.DS_Store
+*.log
